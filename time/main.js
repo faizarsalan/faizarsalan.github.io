@@ -49,15 +49,29 @@ window.addEventListener("load", () => {
     });
 
     const aussiedate = today.toLocaleString('en-GB',{
+        timeZone: 'Asia/Singapore',
+        dateStyle: 'medium'
+    });
+
+    const sgtime = today.toLocaleString('en-GB',{
+        timeZone: 'Asia/Singapore',
+        timeStyle: 'medium'
+    });
+
+    const sgdate = today.toLocaleString('en-GB',{
         timeZone: 'Australia/Canberra',
         dateStyle: 'medium'
     });
 
 
-
         document.getElementById("datetime").innerHTML = jakartatime;
         setTimeout(clock, 1000);
         document.getElementById("date").innerHTML = jakartadate;
+        setTimeout(clock, 1000);
+
+        document.getElementById("sgtime").innerHTML = sgtime;
+        setTimeout(clock, 1000);
+        document.getElementById("sgdate").innerHTML = sgdate;
         setTimeout(clock, 1000);
 
         document.getElementById("datetime2").innerHTML = vilniustime;
