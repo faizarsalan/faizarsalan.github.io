@@ -49,7 +49,7 @@ window.addEventListener("load", () => {
     });
 
     const aussiedate = today.toLocaleString('en-GB',{
-        timeZone: 'Asia/Singapore',
+        timeZone: 'Australia/Canberra',
         dateStyle: 'medium'
     });
 
