@@ -59,7 +59,7 @@ window.addEventListener("load", () => {
     });
 
     const sgdate = today.toLocaleString('en-GB',{
-        timeZone: 'Australia/Singapore',
+        timeZone: 'Asia/Singapore',
         dateStyle: 'medium'
     });
 
@@ -69,9 +69,9 @@ window.addEventListener("load", () => {
         document.getElementById("date").innerHTML = jakartadate;
         setTimeout(clock, 1000);
 
-        document.getElementById("sgtime").innerHTML = sgtime;
+        document.getElementById("sgtimes").innerHTML = sgtime;
         setTimeout(clock, 1000);
-        document.getElementById("sgdate").innerHTML = sgdate;
+        document.getElementById("sgdates").innerHTML = sgdate;
         setTimeout(clock, 1000);
 
         document.getElementById("datetime2").innerHTML = vilniustime;
