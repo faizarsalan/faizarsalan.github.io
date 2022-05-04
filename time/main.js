@@ -59,7 +59,7 @@ window.addEventListener("load", () => {
     });
 
     const sgdate = today.toLocaleString('en-GB',{
-        timeZone: 'Australia/Canberra',
+        timeZone: 'Australia/Singapore',
         dateStyle: 'medium'
     });
 
