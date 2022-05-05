@@ -11,86 +11,72 @@
     <script src="main.js" type="text/javascript"></script>
     <h1>Int'l Timezones of Air Conditioned Duck</h1>
     <main>
-            <div class="clock">
-                <h3>Aristo Time</h3>
-                <h3 id="datetime4"></h3>
-                <small id="date4"></small>
-                <div style="width: 40%;">
+        <div class="subgroup">
+            <h3>Aristo Time</h3>
+                <h3 id="londondisplaytime"></h3>
+                <small id="londondisplaydate"></small>
+                <div>
                     <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-gb" viewBox="0 0 640 480">
                         <path fill="#012169" d="M0 0h640v480H0z"/>
                         <path fill="#FFF" d="m75 0 244 181L562 0h78v62L400 241l240 178v61h-80L320 301 81 480H0v-60l239-178L0 64V0h75z"/>
                         <path fill="#C8102E" d="m424 281 216 159v40L369 281h55zm-184 20 6 35L54 480H0l240-179zM640 0v3L391 191l2-44L590 0h50zM0 0l239 176h-60L0 42V0z"/>
                         <path fill="#FFF" d="M241 0v480h160V0H241zM0 160v160h640V160H0z"/>
                         <path fill="#C8102E" d="M0 193v96h640v-96H0zM273 0v480h96V0h-96z"/>
-                      </svg>
+                    </svg>
                 </div>
-            </div>
-            <div class="clock">
-                <h3>Faiz Time</h3>
-                <h3 id="datetime2"></h3>
-                <small id="date2"></small>
-                <div style="width: 40%;">
+        </div>
+        <div class="subgroup">
+            <h3>Faiz Time</h3>
+                <h3 id="vilniusdisplaytime"></h3>
+                <small id="vilniusdisplaydate"></small>
+                <div>
                     <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-lt" viewBox="0 0 640 480">
                         <g fill-rule="evenodd" stroke-width="1pt" transform="scale(.64143 .96773)">
                           <rect width="1063" height="708.7" fill="#006a44" rx="0" ry="0" transform="scale(.93865 .69686)"/>
                           <rect width="1063" height="236.2" y="475.6" fill="#c1272d" rx="0" ry="0" transform="scale(.93865 .69686)"/>
                           <path fill="#fdb913" d="M0 0h997.8v164.6H0z"/>
                         </g>
-                      </svg>
+                    </svg>
                 </div>
-            </div>
-
-            <div class="clock">
-              <h3>Singapore/Danum Time</h3>
-              <h3 id="sgtimes"></h3>
-              <small id="sgdates"></small>
-              <div style="width: 20%;">
-                <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-sg" viewBox="0 0 640 480">
-                  <defs>
-                    <clipPath id="sg-a">
-                      <path fill-opacity=".7" d="M0 0h640v480H0z"/>
-                    </clipPath>
-                  </defs>
-                  <g fill-rule="evenodd" clip-path="url(#sg-a)">
-                    <path fill="#fff" d="M-20 0h720v480H-20z"/>
-                    <path fill="#df0000" d="M-20 0h720v240H-20z"/>
-                    <path fill="#fff" d="M146 40.2a84.4 84.4 0 0 0 .8 165.2 86 86 0 0 1-106.6-59 86 86 0 0 1 59-106c16-4.6 30.8-4.7 46.9-.2z"/>
-                    <path fill="#fff" d="m133 110 4.9 15-13-9.2-12.8 9.4 4.7-15.2-12.8-9.3 15.9-.2 5-15 5 15h15.8zm17.5 52 5 15.1-13-9.2-12.9 9.3 4.8-15.1-12.8-9.4 15.9-.1 4.9-15.1 5 15h16zm58.5-.4 4.9 15.2-13-9.3-12.8 9.3 4.7-15.1-12.8-9.3 15.9-.2 5-15 5 15h15.8zm17.4-51.6 4.9 15.1-13-9.2-12.8 9.3 4.8-15.1-12.9-9.4 16-.1 4.8-15.1 5 15h16zm-46.3-34.3 5 15.2-13-9.3-12.9 9.4 4.8-15.2-12.8-9.4 15.8-.1 5-15.1 5 15h16z"/>
-                  </g>
-                </svg>
-                
-                <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-my" viewBox="0 0 640 480">
-                  <path id="rect2186" d="M0 0h640v480H0z" style="fill:#c00;fill-opacity:1;stroke:none;stroke-width:1"/>
-                  <path id="rect2188-1" d="M.5 39.9h639v38.4H.5z" style="fill:#fff;fill-opacity:1;stroke:none;stroke-width:.979059"/>
-                  <path id="rect2188-1-9" d="M.5 118.6h639V157H.5z" style="fill:#fff;fill-opacity:1;stroke:none;stroke-width:.979059"/>
-                  <path id="rect2188-1-9-1" d="M.5 197.4h639v38.4H.5z" style="fill:#fff;fill-opacity:1;stroke:none;stroke-width:.979059"/>
-                  <path id="path837" fill="#006" d="M0 .5h320v280H0Z" style="stroke-width:.0571662"/>
-                  <path id="path841" fill="#fc0" d="m207.5 73.8 6 40.7 23-34-12.4 39.2 35.5-20.8-28.1 30 41-3.2-38.3 14.8 38.3 14.8-41-3.2 28.1 30-35.5-20.8 12.3 39.3-23-34.1-6 40.7-5.9-40.7-23 34 12.4-39.2-35.5 20.8 28-30-41 3.2 38.4-14.8-38.3-14.8 41 3.2-28.1-30 35.5 20.8-12.4-39.3 23 34.1zm-33.3 1.7a71.1 71.1 0 1 0 0 130 80 80 0 1 1 0-130z" style="stroke-width:.0555556"/>
-                  <path id="rect2188-1-9-1-4" d="M.5 276.2h639v38.4H.5z" style="fill:#fff;fill-opacity:1;stroke:none;stroke-width:.979059"/>
-                  <path id="rect2188-1-9-1-4-4" d="M.5 354.4h639v38.4H.5z" style="fill:#fff;fill-opacity:1;stroke:none;stroke-width:.979059"/>
-                  <path id="rect2188-1-9-1-4-4-6" d="M0 441.6h639V480H0z" style="fill:#fff;fill-opacity:1;stroke:none;stroke-width:.979059"/>
-                </svg>                
-            </div>
-          </div>
-
-            <div class="clock">
-                <h3>Indopeeps Time</h3>
-                <h3 id="datetime"></h3>
-                <small id="date"></small>
-                <div style="width: 40%;">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-id" viewBox="0 0 640 480">
-                        <g fill-rule="evenodd" stroke-width="1pt">
-                          <path fill="#e70011" d="M0 0h640v249H0z"/>
-                          <path fill="#fff" d="M0 240h640v240H0z"/>
+        </div>
+        <div class="subgroup">
+            <h3>Singapore/Danum Time</h3>
+                <h3 id="sgdisplaytime"></h3>
+                <small id="sgdisplaydate"></small>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-sg" viewBox="0 0 640 480">
+                        <defs>
+                          <clipPath id="sg-a">
+                            <path fill-opacity=".7" d="M0 0h640v480H0z"/>
+                          </clipPath>
+                        </defs>
+                        <g fill-rule="evenodd" clip-path="url(#sg-a)">
+                          <path fill="#fff" d="M-20 0h720v480H-20z"/>
+                          <path fill="#df0000" d="M-20 0h720v240H-20z"/>
+                          <path fill="#fff" d="M146 40.2a84.4 84.4 0 0 0 .8 165.2 86 86 0 0 1-106.6-59 86 86 0 0 1 59-106c16-4.6 30.8-4.7 46.9-.2z"/>
+                          <path fill="#fff" d="m133 110 4.9 15-13-9.2-12.8 9.4 4.7-15.2-12.8-9.3 15.9-.2 5-15 5 15h15.8zm17.5 52 5 15.1-13-9.2-12.9 9.3 4.8-15.1-12.8-9.4 15.9-.1 4.9-15.1 5 15h16zm58.5-.4 4.9 15.2-13-9.3-12.8 9.3 4.7-15.1-12.8-9.3 15.9-.2 5-15 5 15h15.8zm17.4-51.6 4.9 15.1-13-9.2-12.8 9.3 4.8-15.1-12.9-9.4 16-.1 4.8-15.1 5 15h16zm-46.3-34.3 5 15.2-13-9.3-12.9 9.4 4.8-15.2-12.8-9.4 15.8-.1 5-15.1 5 15h16z"/>
                         </g>
-                      </svg>
+                    </svg>
                 </div>
+        </div>
+        <div class="subgroup">
+            <h3>Indonesian Time</h3>
+            <h3 id="jakartadisplaytime"></h3>
+            <small id="jakartadisplaydate"></small>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-id" viewBox="0 0 640 480">
+                    <g fill-rule="evenodd" stroke-width="1pt">
+                      <path fill="#e70011" d="M0 0h640v249H0z"/>
+                      <path fill="#fff" d="M0 240h640v240H0z"/>
+                    </g>
+            </svg>
             </div>
-            <div class="clock">
-                <h3>Rido-Rifqi Time</h3>
-                <h3 id="datetime3"></h3>
-                <small id="date3"></small>
-                <div style="width: 40%;">
+        </div>
+        <div class="subgroup">
+            <h3>Tokyo/Korea Time</h3>
+                <h3 id="tokyodisplaytime"></h3>
+                <small id="tokyodisplaydate"></small>
+                <div>
                     <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-jp" viewBox="0 0 640 480">
                         <defs>
                           <clipPath id="jp-a">
@@ -101,26 +87,57 @@
                           <path fill="#fff" d="M-128 32h720v480h-720z"/>
                           <circle cx="523.1" cy="344.1" r="194.9" fill="#d30000" transform="translate(-168.4 8.6) scale(.76554)"/>
                         </g>
-                      </svg>                      
-                </div>
-            </div>
+                    </svg>
 
-            <div class="clock">
-                <h3>Saddam Time</h3>
-                <h3 id="datetime5"></h3>
-                <small id="date5"></small>
-                <div style="width: 40%;">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-au" viewBox="0 0 640 480">
-                        <path id="path617" fill="#006" stroke-width="1.3" d="M0 0h640v480H0z"/>
-                        <path id="path625" fill="#fff" fill-rule="evenodd" stroke-width="1.3" d="m299.8 392.5-43.7 3.8 6 43.4L232 408l-30.1 31.7 6-43.4-43.7-3.8 37.7-22.3-24.3-36.5 41 15.5 13.4-41.7 13.5 41.7 41-15.5-24.3 36.5m224.4 62.3L476 416.7l17.8 6.7 5.8-18.1 5.8 18.1 17.8-6.7-10.5 15.8 16.4 9.7-19 1.7 2.6 18.9-13-13.9-13.2 13.9 2.6-18.9-19-1.6m16.4-291.9L476 134.6l17.8 6.7 5.8-18.1 5.8 18.1 17.8-6.7-10.5 15.8 16.4 9.8-19 1.6 2.6 18.9-13-13.8-13.2 13.7 2.6-18.8-19-1.6M380.8 265l-10.5-15.8 17.8 6.7 5.8-18.1 5.9 18.1 17.8-6.7L407 265l16.4 9.7-19 1.7 2.7 18.9-13.2-13.9-13 13.9 2.5-18.9-19-1.6m216.3-38L570 221l17.8 6.7 5.8-18.1 5.9 18.1 17.8-6.7-10.5 15.8 16.3 9.7-19 1.7 2.6 18.8-13-13.8-13.2 13.8 2.6-18.8-19-1.7M542 320l-10.3 6.5 2.9-11.9-9.3-7.8 12.1-1 4.6-11.2 4.7 11.3 12.1.9-9.3 7.8 2.9 11.9"/>
-                        <path id="path969" fill="#006" stroke-width=".5" d="M0 0h320v240H0z"/>
-                        <path id="path971" fill="#fff" stroke-width=".5" d="m37.5 0 122 90.5L281 0h39v31l-120 89.5 120 89V240h-40l-120-89.5L40.5 240H0v-30l119.5-89L0 32V0z"/>
-                        <path id="path973" fill="#c8102e" stroke-width=".5" d="M212 140.5 320 220v20l-135.5-99.5zm-92 10 3 17.5-96 72H0zM320 0v1.5l-124.5 94 1-22L295 0zM0 0l119.5 88h-30L0 21z"/>
-                        <path id="path975" fill="#fff" stroke-width=".5" d="M120.5 0v240h80V0zM0 80v80h320V80z"/>
-                        <path id="path977" fill="#c8102e" stroke-width=".5" d="M0 96.5v48h320v-48zM136.5 0v240h48V0z"/>
-                      </svg>                      
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icons-kr" viewBox="0 0 640 480">
+                        <defs id="defs87">
+                          <clipPath id="kr-a">
+                            <path id="path84" fill-opacity=".7" d="M-95.8-.4h682.7v512H-95.8z"/>
+                          </clipPath>
+                        </defs>
+                        <g id="g119" fill-rule="evenodd" clip-path="url(#kr-a)" transform="translate(89.8 .4) scale(.9375)">
+                          <path id="path526" fill="#fff" d="M-95.8-.4H587v512H-95.8Z" style="stroke-width:10.0567"/>
+                          <g id="g540" transform="scale(10.66667) rotate(-56.3 33.9 -9.5)">
+                            <g id="b2">
+                              <path id="b" d="M-6-26H6v2H-6Zm0 3H6v2H-6Zm0 3H6v2H-6Z"/>
+                              <use xlink:href="#b" id="use529" width="100%" height="100%" x="0" y="44"/>
+                            </g>
+                            <path id="path532" stroke="#fff" d="M0 17v10"/>
+                            <path id="path534" fill="#cd2e3a" d="M0-12a12 12 0 0 1 0 24Z"/>
+                            <path id="path536" fill="#0047a0" d="M0-12a12 12 0 0 0 0 24A6 6 0 0 0 0 0Z"/>
+                            <circle id="circle538" cx="0" cy="-6" r="6" fill="#cd2e3a"/>
+                          </g>
+                          <g id="g546" transform="scale(-10.66667) rotate(56.3 10.9 -33.5)">
+                            <use xlink:href="#b2" id="use542" width="100%" height="100%" x="0" y="0"/>
+                            <path id="path544" stroke="#fff" d="M0-23.5v3M0 17v3.5m0 3v3"/>
+                          </g>
+                        </g>
+                    </svg>
                 </div>
-            </div>
+        </div>
+        <div class="subgroup">
+            <h3>Saddam Time</h3>
+                <h3 id="aussiedisplaytime"></h3>
+                <small id="aussiedisplaydate"></small>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-au" viewBox="0 0 640 480">
+                        <path id="path617" fill="#00008B" d="M0 0h640v480H0z"/>
+                        <path id="path971" fill="#fff" d="m37.5 0 122 90.5L281 0h39v31l-120 89.5 120 89V240h-40l-120-89.5L40.5 240H0v-30l119.5-89L0 32V0z"/>
+                        <path id="path973" fill="#f00" d="M212 140.5 320 220v20l-135.5-99.5zm-92 10 3 17.5-96 72H0zM320 0v1.5l-124.5 94 1-22L295 0zM0 0l119.5 88h-30L0 21z"/>
+                        <path id="path975" fill="#fff" d="M120.5,0L120.5,240L200.5,240L200.5,0L120.5,0ZM0,80L0,160L320,160L320,80L0,80Z"/>
+                        <path id="path977" fill="#f00" d="M0 96.5v48h320v-48zM136.5 0v240h48V0z"/>
+                        <g fill="#fff">
+                          <path d="M527 396.7 l-20.5 2.6 2.2 20.5 -14.8-14.4 -14.7 14.5 2-20.5 -20.5-2.4 17.3-11.2 -10.9-17.5 19.6 6.5 6.9-19.5 7.1 19.4 19.5-6.7 -10.7 17.6 17.4 11.1Z" />
+                          <path d="M523.3 279.5 l2.7-13 -9.8-9 13.2-1.5 5.5-12.1 5.5 12.1 13.2 1.5 -9.8 9 2.7 13 -11.6-6.6 -11.6 6.6Z" />
+                          <path d="M419.2 219.5 l-20.3 2.2 1.8 20.3 -14.4-14.5 -14.8 14.1 2.4-20.3 -20.2-2.7 17.3-10.8 -10.5-17.5 19.3 6.8 7.2-19.1 6.7 19.3 19.4-6.3 -10.9 17.3 17.1 11.2Z" />
+                          <path d="M623 186.7 l-20.9 2.7 2.3 20.9 -15.1-14.7 -15 14.8 2.1-21 -20.9-2.4 17.7-11.5 -11.1-17.9 20 6.7 7-19.8 7.2 19.8 19.9-6.9 -11 18 17.8 11.3Z" />
+                          <path d="M526.9 103.2 l-20.7 2.3 1.9 20.8 -14.7-14.8 -15.1 14.4 2.4-20.7 -20.7-2.8 17.7-11 -10.7-17.9 19.7 6.9 7.3-19.5 6.8 19.7 19.8-6.5 -11.1 17.6 17.4 11.5Z" />
+                          <path d="M234 385.7 l-45.8 5.4 4.6 45.9 -32.8-32.4 -33 32.2 4.9-45.9 -45.8-5.8 38.9-24.8 -24-39.4 43.6 15 15.8-43.4 15.5 43.5 43.7-14.7 -24.3 39.2 38.8 25.1Z" />
+                        </g>
+                    </svg>
+                </div>
+        </div>
+        <small id="note">&copy;2020 Faiz Arsalan | Flags by <a href="https://github.com/lipis/flag-icons">Lipis</a></small>
     </main>
 </body>
 </html>

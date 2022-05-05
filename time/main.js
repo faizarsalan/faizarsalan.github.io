@@ -1,27 +1,47 @@
 window.addEventListener("load", () => {
     clock();
     function clock() {
-      const today = new Date();
+        const today = new Date();
 
-      const jakartatime = today.toLocaleString('en-GB',{
-          timeZone: 'Asia/Jakarta',
-          timeStyle: 'medium'
-      });
+        const londontime = today.toLocaleString('en-GB',{
+            timeZone: 'Europe/London',
+            timeStyle: 'medium'
+        });
 
-      const jakartadate = today.toLocaleString('en-GB',{
-        timeZone: 'Asia/Jakarta',
-        dateStyle: 'long'
-    });
+        const londondate = today.toLocaleString('en-GB',{
+            timeZone: 'Europe/London',
+            dateStyle: 'medium'
+        });
 
-      const vilniustime = today.toLocaleString('en-GB',{
-        timeZone: 'Europe/Vilnius',
-        timeStyle: 'medium'
-    });
+        const vilniustime = today.toLocaleString('en-GB',{
+            timeZone: 'Europe/Vilnius',
+            timeStyle: 'medium'
+        });
 
-    const vilniusdate = today.toLocaleString('en-GB',{
-        timeZone: 'Europe/Vilnius',
-        dateStyle: 'long'
-    });
+        const vilniusdate = today.toLocaleString('en-GB',{
+            timeZone: 'Europe/Vilnius',
+            dateStyle: 'long'
+        });
+
+        const sgtime = today.toLocaleString('en-GB',{
+            timeZone: 'Asia/Singapore',
+            timeStyle: 'medium'
+        });
+
+        const sgdate = today.toLocaleString('en-GB',{
+            timeZone: 'Asia/Singapore',
+            dateStyle: 'medium'
+        });
+
+              const jakartatime = today.toLocaleString('en-GB',{
+                  timeZone: 'Asia/Jakarta',
+                  timeStyle: 'medium'
+              });
+
+              const jakartadate = today.toLocaleString('en-GB',{
+                timeZone: 'Asia/Jakarta',
+                dateStyle: 'long'
+            });
 
     const tokyotime = today.toLocaleString('en-GB',{
         timeZone: 'Asia/Tokyo',
@@ -32,16 +52,7 @@ window.addEventListener("load", () => {
         timeZone: 'Asia/Tokyo',
         dateStyle: 'medium'
     });
-    
-    const londontime = today.toLocaleString('en-GB',{
-        timeZone: 'Europe/London',
-        timeStyle: 'medium'
-    });
 
-    const londondate = today.toLocaleString('en-GB',{
-        timeZone: 'Europe/London',
-        dateStyle: 'medium'
-    });
 
     const aussietime = today.toLocaleString('en-GB',{
         timeZone: 'Australia/Canberra',
@@ -53,45 +64,36 @@ window.addEventListener("load", () => {
         dateStyle: 'medium'
     });
 
-    const sgtime = today.toLocaleString('en-GB',{
-        timeZone: 'Asia/Singapore',
-        timeStyle: 'medium'
-    });
 
-    const sgdate = today.toLocaleString('en-GB',{
-        timeZone: 'Asia/Singapore',
-        dateStyle: 'medium'
-    });
-
-
-        document.getElementById("datetime").innerHTML = jakartatime;
+        document.getElementById("londondisplaytime").innerHTML = londontime;
         setTimeout(clock, 1000);
-        document.getElementById("date").innerHTML = jakartadate;
+        document.getElementById("londondisplaydate").innerHTML = londondate;
         setTimeout(clock, 1000);
 
-        document.getElementById("sgtimes").innerHTML = sgtime;
+        document.getElementById("vilniusdisplaytime").innerHTML = vilniustime;
         setTimeout(clock, 1000);
-        document.getElementById("sgdates").innerHTML = sgdate;
-        setTimeout(clock, 1000);
-
-        document.getElementById("datetime2").innerHTML = vilniustime;
-        setTimeout(clock, 1000);
-        document.getElementById("date2").innerHTML = vilniusdate;
+        document.getElementById("vilniusdisplaydate").innerHTML = vilniusdate;
         setTimeout(clock, 1000);
 
-        document.getElementById("datetime3").innerHTML = tokyotime;
+        document.getElementById("sgdisplaytime").innerHTML = sgtime;
         setTimeout(clock, 1000);
-        document.getElementById("date3").innerHTML = tokyodate;
-        setTimeout(clock, 1000);
-
-        document.getElementById("datetime4").innerHTML = londontime;
-        setTimeout(clock, 1000);
-        document.getElementById("date4").innerHTML = londondate;
+        document.getElementById("sgdisplaydate").innerHTML = sgdate;
         setTimeout(clock, 1000);
 
-        document.getElementById("datetime5").innerHTML = aussietime;
+        document.getElementById("jakartadisplaytime").innerHTML = jakartatime;
         setTimeout(clock, 1000);
-        document.getElementById("date5").innerHTML = aussiedate;
+        document.getElementById("jakartadisplaydate").innerHTML = jakartadate;
+        setTimeout(clock, 1000);
+
+        document.getElementById("tokyodisplaytime").innerHTML = tokyotime;
+        setTimeout(clock, 1000);
+        document.getElementById("tokyodisplaydate").innerHTML = tokyodate;
+        setTimeout(clock, 1000);
+
+        document.getElementById("aussiedisplaytime").innerHTML = aussietime;
+        setTimeout(clock, 1000);
+        document.getElementById("aussiedisplaydate").innerHTML = aussiedate;
         setTimeout(clock, 1000);
     }
   });
+
